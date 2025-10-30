@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Meghna - Portfolio</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Sidebar -->
+    <aside class="sidebar" aria-label="Main navigation">
+      <div class="logo"></div>
+      <a class="nav-item" href="#home">Home</a>
+      <a class="nav-item" href="#about">About</a>
+      <a class="nav-item" href="#projects">Projects</a>
+      <a class="nav-item" href="#contact">Contact</a>
+    </aside>
+
+    <!-- Top nav (small screens) -->
+    <div class="topnav" id="topnav">
+      <div class="menu">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+
+    <main class="main">
+      <!-- Header -->
+      <section class="header" id="home">
+        <h1>I'm Meghna.</h1>
+        <p class="muted">CSE Student</p>
+
+        <div class="actions">
+          <!-- header resume button removed as requested -->
+          <div class="socials" aria-label="Social links">
+            <a href="https://www.instagram.com/meghna2707_/?hl=en" target="_blank" rel="noopener" title="Instagram"><i class="fa fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/meghna-subramani-9a64482bb/" target="_blank" rel="noopener" title="LinkedIn"><i class="fa fa-linkedin"></i></a>
+            <a href="https://in.pinterest.com/meghnasubramani/" target="_blank" rel="noopener" title="Pinterest"><i class="fa fa-pinterest-p"></i></a>
+            <a href="https://github.com/Meghna2706" target="_blank" rel="noopener" title="GitHub"><i class="fa fa-github"></i></a>
+          </div>
+        </div>
+      </section>
+
+      <!-- About -->
+      <section id="about" class="card reveal">
+        <h2>About Me</h2>
+        <p class="muted">Hello — I'm a student building simple websites .This portfolio shows my projects, main skills.</p>
+
+        <div style="text-align:center;margin-top:14px">
+          <button class="resume-btn" id="resumeBtn2"><i class="fa fa-download" style="margin-right:8px"></i>View Resume</button>
+        </div>
+      </section>
+
+      <!-- Projects (grid of boxes; responsive 1-4 per row) -->
+      <section id="projects" class="card reveal" style="margin-top:18px">
+        <h2>Projects & Personal Work</h2>
+        <p class="muted">A selection of personal projects and small assignments. Click image to enlarge.</p>
+
+        <div class="grid" id="projectGrid">
+          <!-- Example project box -->
+          <article class="box reveal">
+            <div class="img-overlay">
+              <img src="rock.png" alt="Project 1" loading="lazy" data-full="rock, paper and scissor.png">
+              <div class="overlay">Rock Paper Scissor</div>
+            </div>
+            <div class="box-body">
+              <h4>Rock Paper Scissor</h4>
+              <p>Simple Python game demonstrating basic concepts and GUI.</p>
+              <div class="tags">
+                <span class="tag">Python</span><span class="tag">GUI</span><span class="tag">Game</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="box reveal">
+            <div class="img-overlay">
+              <img src="v1.png" alt="Project 2" loading="lazy" data-full="https://via.placeholder.com/1200x720?text=Photo+Series">
+              <div class="overlay">Parking App</div>
+            </div>
+            <div class="box-body">
+              <h4>Parking App</h4>
+              <p>A web app for managing parking spaces and reservations.</p>
+              <div class="tags">
+                <span class="tag">JavaScript</span><span class="tag">HTML</span><span class="tag">CSS</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="box reveal">
+            <div class="img-overlay">
+              <img src="home.png" alt="Project 3" loading="lazy" data-full="https://via.placeholder.com/1200x720?text=Web+Mockup">
+              <div class="overlay">Home Automation</div>
+            </div>
+            <div class="box-body">
+              <h4>Home Automation</h4>
+              <p>A prototype for a smart home system with IoT integration.</p>
+              <div class="tags">
+                <span class="tag">Cisco Packet Tracer</span><span class="tag">IOT</span><span class="tag">Security</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="box reveal">
+            <div class="img-overlay">
+              <img src="contacts.png" alt="Project 4" loading="lazy" data-full="https://via.placeholder.com/1200x720?text=Mini+App">
+              <div class="overlay">Mini GUI</div>
+            </div>
+            <div class="box-body">
+              <h4>Contact list</h4>
+              <p>Small Python GUI to manage contacts — practice Tkinter.</p>
+              <div class="tags">
+                <span class="tag">Python</span><span class="tag">Tkinter</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- Skills (converted to box grid, each box shows skill and progress) -->
+      <section id="skills" class="card reveal" style="margin-top:20px">
+        <h2>Skills & Personal Project Skills</h2>
+        <p class="muted">Core skills and tools used in personal projects. Boxes will animate when visible.</p>
+
+        <div class="grid" style="margin-top:12px">
+          <div class="box reveal">
+            <div class="box-body">
+              <div class="skill-badge">
+                <div class="skill-icon">J</div>
+                <div style="flex:1">
+                  <h4 style="margin:0">Java</h4>
+                  <p class="muted" style="margin:6px 0 0">Object Oriented, JDBC, Event Handling.</p>
+                  <div class="skill-progress"><div class="bar" data-value="70"></div></div>
+                </div>
+              </div>
+              <div class="tags" style="margin-top:12px">
+                <span class="tag">Programming</span><span class="tag">OOPS</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="box reveal">
+            <div class="box-body">
+              <div class="skill-badge">
+                <div class="skill-icon">C</div>
+                <div style="flex:1">
+                  <h4 style="margin:0">C Programming</h4>
+                  <p class="muted" style="margin:6px 0 0">File Handling, DMA, Structures.</p>
+                  <div class="skill-progress"><div class="bar" data-value="86"></div></div>
+                </div>
+              </div>
+              <div class="tags" style="margin-top:12px">
+                <span class="tag">DataTypes</span><span class="tag">Arrays</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="box reveal">
+            <div class="box-body">
+              <div class="skill-badge">
+                <div class="skill-icon">Py</div>
+                <div style="flex:1">
+                  <h4 style="margin:0">Python</h4>
+                  <p class="muted" style="margin:6px 0 0">Exception handing, Object oriented, Tkinter.</p>
+                  <div class="skill-progress"><div class="bar" data-value="90"></div></div>
+                </div>
+              </div>
+              <div class="tags" style="margin-top:12px">
+                <span class="tag">Numpy</span><span class="tag">Pandas</span><span class="tag">Matplotlib</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="box reveal">
+            <div class="box-body">
+              <div class="skill-badge">
+                <div class="skill-icon">JS</div>
+                <div style="flex:1">
+                  <h4 style="margin:0">JavaScript</h4>
+                  <p class="muted" style="margin:6px 0 0">DOM, small interactions .</p>
+                  <div class="skill-progress"><div class="bar" data-value="80"></div></div>
+                </div>
+              </div>
+              <div class="tags" style="margin-top:12px">
+                <span class="tag">DOM</span><span class="tag">Logic</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="box reveal">
+            <div class="box-body">
+              <div class="skill-badge">
+                <div class="skill-icon">SQL</div>
+                <div style="flex:1">
+                  <h4 style="margin:0">Structured Query Language</h4>
+                  <p class="muted" style="margin:6px 0 0">Table Creation,Read, Updation, Deletion.</p>
+                  <div class="skill-progress"><div class="bar" data-value="85"></div></div>
+                </div>
+              </div>
+              <div class="tags" style="margin-top:12px">
+                <span class="tag">Table</span><span class="tag">CRUD</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="box reveal">
+            <div class="box-body">
+              <div class="skill-badge">
+                <div class="skill-icon">DV</div>
+                <div style="flex:1">
+                  <h4 style="margin:0">Data Visualization</h4>
+                  <p class="muted" style="margin:6px 0 0">Visual Represenation.</p>
+                  <div class="skill-progress"><div class="bar" data-value="90"></div></div>
+                </div>
+              </div>
+              <div class="tags" style="margin-top:12px">
+                <span class="tag">Tableau</span><span class="tag">Power BI</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="box reveal">
+            <div class="box-body">
+              <div class="skill-badge">
+                <div class="skill-icon">WD</div>
+                <div style="flex:1">
+                  <h4 style="margin:0">Web Development</h4>
+                  <p class="muted" style="margin:6px 0 0">Layouts, responsive CSS, accessibility basics .</p>
+                  <div class="skill-progress"><div class="bar" data-value="70"></div></div>
+                </div>
+              </div>
+              <div class="tags" style="margin-top:12px">
+                <span class="tag">HTML</span><span class="tag">CSS</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="box reveal">
+            <div class="box-body">
+              <div class="skill-badge">
+                <div class="skill-icon">DS</div>
+                <div style="flex:1">
+                  <h4 style="margin:0">Data Structures</h4>
+                  <p class="muted" style="margin:6px 0 0">Algorithms, Stack, Queue, Trees, Graphs, Linked List .</p>
+                  <div class="skill-progress"><div class="bar" data-value="80"></div></div>
+                </div>
+              </div>
+              <div class="tags" style="margin-top:12px">
+                <span class="tag">Primitive</span><span class="tag">Non-Primitive</span>
+              </div>
+            </div>
+          </div>
+        </div> 
+      </section>
+
+      <!-- Achievements -->
+      <section id="achievements" class="card reveal" style="margin-top:18px">
+        <h2>Achievements</h2>
+        <div class="grid" style="margin-top:12px">
+          <div class="box reveal">
+            <div class="box-body">
+              <h4>Intership</h4>
+              <p class="muted">AIML Virtual Intership supported by Google</p>
+            </div>
+          </div>
+          <div class="box reveal">
+            <div class="box-body">
+              <h4>Course Completion</h4>
+              <p class="muted">Completed<br> 1. Database Programming with SQL<br> 2. Programming Essential in C<br> 3. Programming Essential in python<br> 4. JavaScript Essentials-1 course(certificate)</p>
+            </div>
+          </div>
+          <div class="box reveal">
+            <div class="box-body">
+              <h4>Open Source</h4>
+              <p class="muted">Uploaded<br> 1. Python project on GitHub<br>2. Pomodoro app.</p>
+            </div>
+          </div>
+          <div class="box reveal">
+            <div class="box-body">
+              <h4>Forage</h4>
+              <p class="muted">1. Data Visualization<br>2. Data Analytics job Simulation<br>3. GenAI Data Analytics.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact (no input fields) -->
+      <section id="contact" class="card reveal" style="margin-top:18px">
+        <h2>Contact Me</h2>
+        <p class="muted"><i class="fa fa-map-marker" style="margin-right:8px"></i>Hyderabad, Telangana</p>
+
+        <div class="contact-grid" aria-label="Contact information">
+          <div class="contact-card">
+            <h4>Email</h4>
+            <p class="muted">Prefer not to use form — please email directly:</p>
+            <p><a href="mailto:smegu.2706@gmail.com">smegu.2706@gmail.com</a></p>
+          </div>
+
+          <div class="contact-card">
+            <h4>Phone</h4>
+            <p class="muted">Call or WhatsApp:</p>
+            <p><a href="tel:+919573439476">+91 95734 39476</a></p>
+          </div>
+
+          <div class="contact-card">
+            <h4>Social</h4>
+            <p class="muted">Find me on:</p>
+            <p>
+              <a href="https://www.linkedin.com/in/meghna-subramani-9a64482bb/" target="_blank" rel="noopener">LinkedIn</a><br>
+              <a href="https://github.com/Meghna2706" target="_blank" rel="noopener">GitHub</a><br>
+              <a href="https://www.instagram.com/meghna2707_/?hl=en" target="_blank" rel="noopener">Instagram</a>
+            </p>
+          </div>
+        </div>
+
+      </section>
+
+      <footer>
+        <div class="muted">Made by Meghna</div>
+      </footer>
+    </main>
+
+    <!-- Simple modal for viewing project images -->
+    <div id="modal" style="position:fixed;inset:0;display:none;align-items:center;justify-content:center;background:rgba(0,0,0,.6);z-index:1000">
+      <div style="max-width:95%;max-height:90%;background:#fff;border-radius:8px;overflow:hidden;padding:8px">
+        <button id="modalClose" style="float:right;background:#111;color:#fff;border:none;padding:6px 10px;border-radius:6px;cursor:pointer">Close</button>
+        <img id="modalImg" src="" alt="preview" style="width:100%;height:auto;display:block;border-radius:6px" />
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
